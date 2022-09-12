@@ -1,15 +1,21 @@
 {
   "scripts": {
     "test:tap": "tap --ts \"test/**/*.tap.test.ts\"",
-    "test:vitest": "vitest --coverage run"
+    "test:vitest": "vitest --coverage run",
+    "test:jest": "jest test/**/*.jest.test.ts"
   },
   "dependencies": {
     "fastify": "^4.5.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.19.0",
+    "@babel/preset-env": "^7.19.0",
+    "@babel/preset-typescript": "^7.18.6",
     "@fastify/autoload": "^5.3.0",
     "@types/tap": "^15.0.7",
     "@vitest/coverage-istanbul": "^0.23.1",
+    "babel-jest": "^29.0.3",
+    "jest": "^29.0.3",
     "prettier": "^2.7.1",
     "tap": "^16.3.0",
     "ts-node": "^10.9.1",
